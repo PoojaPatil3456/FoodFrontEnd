@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;  font-family: 'Roboto', sans-serif; }
+
+// Import Toaster 
+@import '/Users/poojapatil/FoodWebsite/src/app/toaster.scss';
+
+@mixin main_box_shadow {
+    box-shadow:0 1px 8px #bbb; 
+    padding: 12vh; 
+    margin: 10vh;
+}
+
+
+@mixin cartBoxShadow {
+    box-shadow:0 1px 8px #bbb;
+}
+
+@mixin  main_box_text_title{
+    margin-top: 6vh; 
+    background-color: #fff; 
+    padding: 3vh;
+}
+
+@mixin btn_style {
+    background-color: rgb(251, 211, 53);
+    font-weight: bold;
+  }
+  
+@mixin form_control_style {
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: inherit;
+}  
+
+@mixin label {
+    font-weight: bold;
+}
+
+@mixin  removeBtn {
+    background-color: #e45966; 
+    font-weight: bold;
+}

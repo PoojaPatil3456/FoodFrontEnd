@@ -1,0 +1,30 @@
+@import '/src/styles.scss';
+
+
+.main_card{
+    @include cartBoxShadow;
+}
+
+.removeBtn{
+    @include removeBtn;
+}
+
+.btn_cart{
+  @include btn_style;
+}
+
+.text_cart{
+font-weight: bold;
+}
+
+@media only screen and (max-width: 425px) {
+  .buyNow{
+      margin-top: 8px;
+  }
+
+  .back_yellow{
+    background-image: none;
+    margin-top: 203px;
+  }
+
+}

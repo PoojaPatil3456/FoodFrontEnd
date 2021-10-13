@@ -1,0 +1,30 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h1>View Food Order's</h1>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-3"></div>
+        <div class="col-6">
+            <table class="table table-hover">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Order Name</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let order of [1,2]">
+                    <th scope="row">1</th>
+                    <td>order</td>
+                    <td><button class="btn btn-success">Accept</button>
+                        <button class="btn btn-danger">Cancel</button></td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+        <div class="col-3"></div>
+    </div>
+</div>
