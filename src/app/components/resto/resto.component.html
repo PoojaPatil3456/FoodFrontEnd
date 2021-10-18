@@ -1,0 +1,25 @@
+<div class="content">
+    <div class="searchbar">
+      <div class="col-md-12">
+        <input type="text" class="form-control" [(ngModel)]="filteredString" placeholder="Search For Restaurants"/>
+      </div>
+    </div>
+    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+    <div fxLayout="row wrap" fxLayoutGap="50px grid">
+      <div fxFlex="25%" *ngFor="let resto of getRestaurants | filter:filteredString" >
+        <mat-card class="mat-elevation-z4" >
+          <mat-card-header>
+            <mat-card-title>{{resto.name}}</mat-card-title>
+          </mat-card-header>
+          <img width="150" height="250" mat-card-image src={{resto.imgPath}}>
+          <mat-card-content>
+            {{resto.location}}
+          </mat-card-content>
+          <mat-card-actions>
+            <button (click)="navigateToMenu(resto)" type="button" class="btn btn-success">View Menu</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
+    </div>
+    </div>
+    
